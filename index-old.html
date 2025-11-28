@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Unity - Residencia en Costa Rica | Rentista, Pensionado, Inversionista</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <i data-lucide="shield-check" class="brand-icon"></i>
+                <span class="brand-name">Legal Unity</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="#sobre-nosotros" class="nav-link" data-i18n="nav_about">Nosotros</a></li>
+                <li class="nav-dropdown">
+                    <a href="#tipos-residencia" class="nav-link"><span data-i18n="nav_residences">Residencias</span> <i data-lucide="chevron-down" class="dropdown-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#rentista" class="dropdown-link" data-i18n="nav_rentista">Rentista</a></li>
+                        <li><a href="#pensionado" class="dropdown-link" data-i18n="nav_pensionado">Pensionado</a></li>
+                        <li><a href="#inversionista" class="dropdown-link" data-i18n="nav_inversionista">Inversionista</a></li>
+                    </ul>
+                </li>
+                <li><a href="#servicios" class="nav-link" data-i18n="nav_services">Servicios</a></li>
+                <li><a href="#informacion" class="nav-link" data-i18n="nav_info">Información</a></li>
+                <li><a href="#contacto" class="nav-link nav-link-cta" data-i18n="nav_contact">Contacto</a></li>
+                <li class="language-switcher">
+                    <button class="lang-btn" data-lang="en" title="English">
+                        <span class="flag-icon">🇺🇸</span>
+                    </button>
+                    <button class="lang-btn" data-lang="es" title="Español">
+                        <span class="flag-icon">🇪🇸</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN 1 - HERO -->
+    <section id="hero" class="hero parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-brand">
+                <i data-lucide="shield-check" class="hero-brand-icon"></i>
+                <h1 class="hero-title" data-i18n="hero_brand">Legal Unity</h1>
+            </div>
+            <h2 class="hero-subtitle-main" data-i18n="hero_subtitle">Residencia en Costa Rica</h2>
+            <p class="hero-categories" data-i18n="hero_categories">Rentista · Pensionado · Inversionista</p>
+            <p class="hero-subtitle" data-i18n="hero_description">Te guiamos en todo el proceso migratorio para obtener tu residencia temporal en Costa Rica de forma segura, rápida y sin complicaciones.</p>
+            
+            <div class="hero-buttons">
+                <a href="#rentista" class="btn btn-primary" data-i18n="hero_btn_rentista">Rentista</a>
+                <a href="#pensionado" class="btn btn-primary" data-i18n="hero_btn_pensionado">Pensionado</a>
+                <a href="#inversionista" class="btn btn-primary" data-i18n="hero_btn_inversionista">Inversionista</a>
+            </div>
+            
+            <a href="#contacto" class="btn btn-secondary">
+                <i data-lucide="mail"></i>
+                <span data-i18n="hero_btn_consultation">Agenda una consulta</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- SCROLL INDICATOR -->
+    <div class="scroll-indicator">
+        <i data-lucide="chevron-down" class="scroll-icon"></i>
+    </div>
+
+    <!-- SECCIÓN 2 - SOBRE NOSOTROS -->
+    <section id="sobre-nosotros" class="about-section parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="about_label">Conoce Legal Unity</span>
+                <h2 class="section-title" data-i18n="about_title">¿Quiénes Somos?</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-intro">
+                    <i data-lucide="briefcase" class="about-icon"></i>
+                    <p class="about-lead" data-i18n="about_intro">Somos una firma especializada en derecho migratorio en Costa Rica, dedicada a acompañar a extranjeros en su proceso de obtención de residencia temporal o permanente.</p>
+                </div>
+                <div class="about-details">
+                    <p data-i18n="about_details">Gestionamos documentos, presentamos tu expediente ante Migración, damos seguimiento constante y realizamos todos los pasos necesarios para que obtengas tu estatus legal sin estrés ni trámites innecesarios.</p>
+                    <div class="highlight-box">
+                        <i data-lucide="check-circle" class="highlight-icon"></i>
+                        <p class="highlight" data-i18n="about_highlight">Nuestro compromiso es ofrecerte un servicio eficiente, honesto y personalizado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3 - TIPOS DE RESIDENCIA -->
+    <section id="tipos-residencia" class="residencia-section parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="residences_label">Encuentra tu opción</span>
+                <h2 class="section-title" data-i18n="residences_title">Tipos de Residencia</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- RENTISTA -->
+            <div id="rentista" class="residencia-card">
+                <div class="card-header">
+                    <h3><i data-lucide="circle" class="icon-circle icon-blue"></i> <span data-i18n="rentista_title">Residencia Rentista</span></h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description" data-i18n="rentista_description">Ideal para extranjeros que desean vivir en Costa Rica demostrando ingresos estables sin necesidad de trabajar dentro del país.</p>
+                    
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <span>✔ Requisitos Generales</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Formulario de solicitud firmado ante funcionario o autenticado por abogado</li>
+                                    <li>Pago de derechos migratorios: $50 USD</li>
+                                    <li>Dos fotografías tamaño pasaporte</li>
+                                    <li>Copia completa del pasaporte</li>
+                                    <li>Certificado de nacimiento + traducción al español (legalizado/apostillado)</li>
+                                    <li>Certificado de antecedentes penales + traducción al español (apostillado)</li>
+                                    <li>Comprobante de ingreso al país (sello migratorio)</li>
+                                    <li>Huellas dactilares</li>
+                                    <li>Registro consular (solo canadienses)</li>
+                                    <li>Prueba de solvencia económica (según corresponda)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <span>✔ Requisito Específico - Rentista</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Comprobar ingresos de <strong>$2,500 USD mensuales por 2 años</strong>, ya sea mediante depósito bancario o certificación financiera</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <span>✔ Nuestros Servicios</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <ol>
+                                    <li>Gestión documental completa y presentación del expediente migratorio</li>
+                                    <li>Aseguramiento ante la CCSS para trámite de DIMEX</li>
+                                    <li>Acompañamiento para obtención rápida de DIMEX</li>
+                                    <li>Renovación de DIMEX</li>
+                                    <li>Acompañamiento en aeropuerto ante problemas migratorios</li>
+                                    <li>Permisos de salida para menores de edad</li>
+                                    <li>Homologación de licencias extranjeras</li>
+                                    <li>Renovación de licencias nacionales</li>
+                                    <li>Trámites ante Municipalidades</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contacto" class="btn btn-cta">
+                        <i data-lucide="arrow-right"></i>
+                        <span>Solicita una evaluación para Rentista</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- PENSIONADO -->
+            <div id="pensionado" class="residencia-card">
+                <div class="card-header">
+                    <h3><i data-lucide="circle" class="icon-circle icon-green"></i> Residencia Pensionado</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Dirigido a jubilados o personas que reciben pensión vitalicia certificada.</p>
+                    
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <span>✔ Requisito Específico - Pensionado</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Carta oficial de pensión emitida por embajada o entidad certificadora</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <span>✔ Requisitos Generales</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Formulario de solicitud firmado ante funcionario o autenticado por abogado</li>
+                                    <li>Pago de derechos migratorios: $50 USD</li>
+                                    <li>Dos fotografías tamaño pasaporte</li>
+                                    <li>Copia completa del pasaporte</li>
+                                    <li>Certificado de nacimiento + traducción al español (legalizado/apostillado)</li>
+                                    <li>Certificado de antecedentes penales + traducción al español (apostillado)</li>
+                                    <li>Comprobante de ingreso al país (sello migratorio)</li>
+                                    <li>Huellas dactilares</li>
+                                    <li>Registro consular (solo canadienses)</li>
+                                    <li>Prueba de solvencia económica (según corresponda)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <span>✔ Nuestros Servicios</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <ol>
+                                    <li>Gestión documental completa y presentación del expediente migratorio</li>
+                                    <li>Aseguramiento ante la CCSS para trámite de DIMEX</li>
+                                    <li>Acompañamiento para obtención rápida de DIMEX</li>
+                                    <li>Renovación de DIMEX</li>
+                                    <li>Acompañamiento en aeropuerto ante problemas migratorios</li>
+                                    <li>Permisos de salida para menores de edad</li>
+                                    <li>Homologación de licencias extranjeras</li>
+                                    <li>Renovación de licencias nacionales</li>
+                                    <li>Trámites ante Municipalidades</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contacto" class="btn btn-cta">
+                        <i data-lucide="arrow-right"></i>
+                        <span>Solicita una evaluación para Pensionado</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- INVERSIONISTA -->
+            <div id="inversionista" class="residencia-card">
+                <div class="card-header">
+                    <h3><i data-lucide="circle" class="icon-circle icon-orange"></i> Residencia Inversionista</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Para extranjeros que han realizado inversiones en Costa Rica.</p>
+                    
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <span>✔ Requisito Específico - Inversionista</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p><strong>Inversión mínima de $150,000 USD en:</strong></p>
+                                <ul>
+                                    <li>Propiedad</li>
+                                    <li>Negocio</li>
+                                    <li>Proyecto registrable</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <span>✔ Documentación que respalda la inversión</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Escritura pública inscrita en el Registro Nacional</li>
+                                    <li>Certificación registral actualizada</li>
+                                    <li>Avalúo por perito autorizado</li>
+                                    <li><strong>Para inversión en empresa:</strong>
+                                        <ul>
+                                            <li>Estados financieros</li>
+                                            <li>Certificación de participación accionaria</li>
+                                            <li>Inscripción en Hacienda (si no es compra a título personal)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <span>✔ Requisitos Generales</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Formulario de solicitud firmado ante funcionario o autenticado por abogado</li>
+                                    <li>Pago de derechos migratorios: $50 USD</li>
+                                    <li>Dos fotografías tamaño pasaporte</li>
+                                    <li>Copia completa del pasaporte</li>
+                                    <li>Certificado de nacimiento + traducción al español (legalizado/apostillado)</li>
+                                    <li>Certificado de antecedentes penales + traducción al español (apostillado)</li>
+                                    <li>Comprobante de ingreso al país (sello migratorio)</li>
+                                    <li>Huellas dactilares</li>
+                                    <li>Registro consular (solo canadienses)</li>
+                                    <li>Prueba de solvencia económica (según corresponda)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <span>✔ Nuestros Servicios</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <ol>
+                                    <li>Gestión documental completa y presentación del expediente migratorio</li>
+                                    <li>Aseguramiento ante la CCSS para trámite de DIMEX</li>
+                                    <li>Acompañamiento para obtención rápida de DIMEX</li>
+                                    <li>Renovación de DIMEX</li>
+                                    <li>Acompañamiento en aeropuerto ante problemas migratorios</li>
+                                    <li>Permisos de salida para menores de edad</li>
+                                    <li>Homologación de licencias extranjeras</li>
+                                    <li>Renovación de licencias nacionales</li>
+                                    <li>Trámites ante Municipalidades</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contacto" class="btn btn-cta">
+                        <i data-lucide="arrow-right"></i>
+                        <span>Solicita una evaluación para Inversionista</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4 - SERVICIOS COMPLETOS -->
+    <section id="servicios" class="services-section parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="services_label">Nuestros servicios</span>
+                <h2 class="section-title" data-i18n="services_title">¿Por qué elegirnos?</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon"><i data-lucide="file-text"></i></div>
+                    <h4>Expediente Migratorio</h4>
+                    <p>Presentación, defensa y seguimiento completo</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i data-lucide="scale"></i></div>
+                    <h4>Recursos TAM</h4>
+                    <p>Ante el Tribunal Administrativo Migratorio</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i data-lucide="landmark"></i></div>
+                    <h4>Trámites Completos</h4>
+                    <p>Migración, CCSS y bancos</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i data-lucide="refresh-cw"></i></div>
+                    <h4>Renovaciones</h4>
+                    <p>De residencia y DIMEX</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i data-lucide="plane"></i></div>
+                    <h4>Asistencia Aeropuerto</h4>
+                    <p>Apoyo en situaciones migratorias</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i data-lucide="users"></i></div>
+                    <h4>Servicios Adicionales</h4>
+                    <p>Menores, licencias y municipalidades</p>
+                </div>
+            </div>
+            <div class="cta-center">
+                <a href="#contacto" class="btn btn-cta-large">
+                    <i data-lucide="phone"></i>
+                    <span>Agenda una consulta con un especialista</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5 - INFORMACIÓN IMPORTANTE -->
+    <section id="informacion" class="info-section parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="info_label">Detalles clave</span>
+                <h2 class="section-title" data-i18n="info_title">Información Importante</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><i data-lucide="pin" class="info-icon"></i> <span data-i18n="info_apostilla_title">Apostilla</span></h3>
+                    <p>Todos los documentos extranjeros deben ser apostillados.</p>
+                    <p class="highlight">La firma gestiona la cita y el trámite sin que el cliente tenga que presentarse.</p>
+                </div>
+                <div class="info-card">
+                    <h3><i data-lucide="pin" class="info-icon"></i> <span data-i18n="info_renovacion_title">Renovación</span></h3>
+                    <ul>
+                        <li>Residencias temporales (como inversionista) se otorgan por <strong>2 años</strong></li>
+                        <li>Renovables si se mantiene la inversión</li>
+                        <li>Tras <strong>3 años consecutivos</strong>, puede solicitarse la residencia permanente</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3><i data-lucide="pin" class="info-icon"></i> <span data-i18n="info_permanente_title">Residencia Permanente</span></h3>
+                    <p data-i18n="info_permanente_intro">Se obtiene principalmente por:</p>
+                    <ul>
+                        <li>Vínculo familiar con costarricense (padres, hijos, hermanos con discapacidad)</li>
+                        <li>Haber tenido residencia temporal durante 3 años consecutivos</li>
+                        <li>Cónyuge de costarricense (tras 3 años de residencia temporal renovada)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 6 - FORMULARIO DE CONTACTO -->
+    <section id="contacto" class="contact-section parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="contact_label">Comencemos</span>
+                <h2 class="section-title" data-i18n="contact_title">¿Listo para iniciar tu trámite migratorio en Costa Rica?</h2>
+                <div class="title-underline"></div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="nacionalidad">Nacionalidad *</label>
+                    <input type="text" id="nacionalidad" name="nacionalidad" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono (WhatsApp) *</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipo-residencia">Tipo de residencia de interés *</label>
+                    <select id="tipo-residencia" name="tipo-residencia" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="rentista">Rentista</option>
+                        <option value="pensionado">Pensionado</option>
+                        <option value="inversionista">Inversionista</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje adicional</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">
+                    <i data-lucide="send"></i>
+                    <span>Enviar consulta</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 7 - PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4 data-i18n="footer_contact_title">Contacto</h4>
+                    <p><i data-lucide="phone" class="footer-icon"></i> Teléfono / WhatsApp: +506 XXXX-XXXX</p>
+                    <p><i data-lucide="mail" class="footer-icon"></i> Email: info@residenciacr.com</p>
+                    <p><i data-lucide="map-pin" class="footer-icon"></i> Dirección: San José, Costa Rica</p>
+                    <p><i data-lucide="clock" class="footer-icon"></i> Horario: Lun-Vie 8:00-17:00</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#rentista">Rentista</a></li>
+                        <li><a href="#pensionado">Pensionado</a></li>
+                        <li><a href="#inversionista">Inversionista</a></li>
+                        <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                        <li><a href="#contacto">Contáctenos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i data-lucide="shield-check" class="footer-brand-icon"></i>
+                        <h4>Legal Unity</h4>
+                    </div>
+                    <p>Firma especializada en derecho migratorio en Costa Rica. Acompañamiento profesional en tu proceso de residencia temporal o permanente.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Residencia Costa Rica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    <script src="i18n-content.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

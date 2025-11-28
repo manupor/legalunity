@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Unity - Residencia en Costa Rica | Rentista, Pensionado, Inversionista</title>
+    <link rel="stylesheet" href="styles-modern.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container-fluid nav-container">
+            <div class="nav-brand">
+                <i data-lucide="shield-check" class="brand-icon"></i>
+                <span class="brand-name">Legal Unity</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="#sobre-nosotros" class="nav-link" data-i18n="nav_about">Nosotros</a></li>
+                <li class="nav-dropdown">
+                    <a href="#tipos-residencia" class="nav-link"><span data-i18n="nav_residences">Residencias</span> <i data-lucide="chevron-down" class="dropdown-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#rentista" class="dropdown-link" data-i18n="nav_rentista">Rentista</a></li>
+                        <li><a href="#pensionado" class="dropdown-link" data-i18n="nav_pensionado">Pensionado</a></li>
+                        <li><a href="#inversionista" class="dropdown-link" data-i18n="nav_inversionista">Inversionista</a></li>
+                    </ul>
+                </li>
+                <li><a href="#servicios" class="nav-link" data-i18n="nav_services">Servicios</a></li>
+                <li><a href="#contacto" class="nav-link nav-link-cta" data-i18n="nav_contact">Contacto</a></li>
+                <li class="language-switcher">
+                    <button class="lang-btn" data-lang="en" title="English">
+                        <span class="flag-icon">🇺🇸</span>
+                    </button>
+                    <button class="lang-btn" data-lang="es" title="Español">
+                        <span class="flag-icon">🇪🇸</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-modern">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('scenic-aerial-view-of-arenal-volcano-in-costa-rica-2025-02-10-06-34-29-utc.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('aerial-drone-photo-of-paradise-resort-island-with-2025-01-26-19-41-21-utc.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="slider-controls">
+            <button class="slider-btn prev" aria-label="Previous slide">
+                <i data-lucide="chevron-left"></i>
+            </button>
+            <button class="slider-btn next" aria-label="Next slide">
+                <i data-lucide="chevron-right"></i>
+            </button>
+        </div>
+        <div class="slider-dots"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle" data-i18n="hero_categories">Rentista · Pensionado · Inversionista</p>
+                <h1 class="hero-title">
+                    <span data-i18n="hero_subtitle">Residencia en Costa Rica</span>
+                    <span class="title-highlight">Legal Unity</span>
+                </h1>
+                <p class="hero-description" data-i18n="hero_description">
+                    Te guiamos en todo el proceso migratorio para obtener tu residencia temporal en Costa Rica de forma segura, rápida y sin complicaciones.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary-large">
+                        <i data-lucide="mail"></i>
+                        <span data-i18n="hero_btn_consultation">Agenda una consulta</span>
+                    </a>
+                    <a href="#sobre-nosotros" class="btn btn-outline-light">
+                        <i data-lucide="info"></i>
+                        <span data-i18n="nav_about">Conócenos</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i data-lucide="chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- RESIDENCE TYPES SECTION (Cards Style) -->
+    <section id="tipos-residencia" class="residence-types-section">
+        <div class="container">
+            <div class="section-header-modern fade-in-up">
+                <span class="section-badge" data-i18n="residences_label">Encuentra tu opción</span>
+                <h2 class="section-title-modern" data-i18n="residences_title">Tipos de Residencia</h2>
+                <p class="section-description">Ofrecemos tres categorías principales para tu residencia en Costa Rica</p>
+            </div>
+
+            <div class="residence-grid stagger-animation">
+                <!-- RENTISTA CARD -->
+                <div class="residence-card" id="rentista">
+                    <div class="card-badge blue">
+                        <i data-lucide="circle"></i>
+                        <span data-i18n="rentista_title">Rentista</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="rentista_title">Residencia Rentista</h3>
+                        <p data-i18n="rentista_description">Ideal para extranjeros que desean vivir en Costa Rica demostrando ingresos estables sin necesidad de trabajar dentro del país.</p>
+                        <div class="card-highlight">
+                            <i data-lucide="dollar-sign"></i>
+                            <div>
+                                <strong>$2,500 USD</strong>
+                                <span>Ingreso mensual requerido</span>
+                            </div>
+                        </div>
+                        <a href="#rentista-details" class="btn btn-primary" data-modal-trigger="rentista">
+                            <span>Ver Requisitos</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PENSIONADO CARD -->
+                <div class="residence-card featured" id="pensionado">
+                    <div class="featured-tag">Popular</div>
+                    <div class="card-badge green">
+                        <i data-lucide="circle"></i>
+                        <span data-i18n="pensionado_title">Pensionado</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="pensionado_title">Residencia Pensionado</h3>
+                        <p data-i18n="pensionado_description">Dirigido a jubilados o personas que reciben pensión vitalicia certificada.</p>
+                        <div class="card-highlight">
+                            <i data-lucide="shield-check"></i>
+                            <div>
+                                <strong>Pensión Certificada</strong>
+                                <span>Vitalicia requerida</span>
+                            </div>
+                        </div>
+                        <a href="#pensionado-details" class="btn btn-primary" data-modal-trigger="pensionado">
+                            <span>Ver Requisitos</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- INVERSIONISTA CARD -->
+                <div class="residence-card" id="inversionista">
+                    <div class="card-badge orange">
+                        <i data-lucide="circle"></i>
+                        <span data-i18n="inversionista_title">Inversionista</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="inversionista_title">Residencia Inversionista</h3>
+                        <p data-i18n="inversionista_description">Para extranjeros que han realizado inversiones en Costa Rica.</p>
+                        <div class="card-highlight">
+                            <i data-lucide="trending-up"></i>
+                            <div>
+                                <strong>$150,000 USD</strong>
+                                <span>Inversión mínima</span>
+                            </div>
+                        </div>
+                        <a href="#inversionista-details" class="btn btn-primary" data-modal-trigger="inversionista">
+                            <span>Ver Requisitos</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="sobre-nosotros" class="about-section-modern">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-side fade-in-left">
+                    <div class="image-collage">
+                        <div class="collage-main"></div>
+                        <div class="collage-stats">
+                            <div class="stat-box">
+                                <h3>500+</h3>
+                                <p>Casos exitosos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content-side fade-in-right">
+                    <span class="section-badge" data-i18n="about_label">Conoce Legal Unity</span>
+                    <h2 class="section-title-modern" data-i18n="about_title">¿Quiénes Somos?</h2>
+                    <p class="lead-text" data-i18n="about_intro">
+                        Somos una firma especializada en derecho migratorio en Costa Rica, dedicada a acompañar a extranjeros en su proceso de obtención de residencia temporal o permanente.
+                    </p>
+                    <p data-i18n="about_details">
+                        Gestionamos documentos, presentamos tu expediente ante Migración, damos seguimiento constante y realizamos todos los pasos necesarios para que obtengas tu estatus legal sin estrés ni trámites innecesarios.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i data-lucide="check-circle"></i>
+                            <span>Atención personalizada</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-lucide="check-circle"></i>
+                            <span>Seguimiento constante</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-lucide="check-circle"></i>
+                            <span>Experiencia comprobada</span>
+                        </div>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary-large">
+                        <span>Comenzar mi proceso</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTICS SECTION -->
+    <section class="stats-section">
+        <div class="stats-overlay"></div>
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-count="500">500+</h3>
+                    <p class="stat-label">Residencias Aprobadas</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-count="15">15+</h3>
+                    <p class="stat-label">Años de Experiencia</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-count="98">98%</h3>
+                    <p class="stat-label">Tasa de Éxito</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-count="45">45+</h3>
+                    <p class="stat-label">Países Representados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="servicios" class="services-section-modern">
+        <div class="container">
+            <div class="section-header-modern centered fade-in-up">
+                <span class="section-badge" data-i18n="services_label">Nuestros servicios</span>
+                <h2 class="section-title-modern" data-i18n="services_title">¿Por qué elegirnos?</h2>
+                <p class="section-description">Ofrecemos un servicio integral para tu proceso migratorio</p>
+            </div>
+
+            <div class="services-grid-modern stagger-animation">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <h4>Expediente Migratorio</h4>
+                    <p>Presentación, defensa y seguimiento completo de tu expediente</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="scale"></i>
+                    </div>
+                    <h4>Recursos TAM</h4>
+                    <p>Representación ante el Tribunal Administrativo Migratorio</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="landmark"></i>
+                    </div>
+                    <h4>Trámites Completos</h4>
+                    <p>Gestión ante Migración, CCSS y entidades bancarias</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="refresh-cw"></i>
+                    </div>
+                    <h4>Renovaciones</h4>
+                    <p>Renovación de residencia y DIMEX sin complicaciones</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="plane"></i>
+                    </div>
+                    <h4>Asistencia Aeropuerto</h4>
+                    <p>Apoyo inmediato en situaciones migratorias urgentes</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h4>Servicios Adicionales</h4>
+                    <p>Menores, licencias y trámites municipales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPORTANT INFORMATION SECTION -->
+    <section id="informacion" class="info-section-modern">
+        <div class="container">
+            <div class="section-header-modern centered fade-in-up">
+                <span class="section-badge" data-i18n="info_label">Detalles clave</span>
+                <h2 class="section-title-modern" data-i18n="info_title">Información Importante</h2>
+            </div>
+
+            <div class="info-cards-grid stagger-animation">
+                <div class="info-card-modern">
+                    <div class="info-icon">
+                        <i data-lucide="file-check"></i>
+                    </div>
+                    <h3 data-i18n="info_apostilla_title">Apostilla</h3>
+                    <p data-i18n="info_apostilla_1">Todos los documentos extranjeros deben ser apostillados.</p>
+                    <p class="highlight-text" data-i18n="info_apostilla_2">La firma gestiona la cita y el trámite sin que el cliente tenga que presentarse.</p>
+                </div>
+
+                <div class="info-card-modern">
+                    <div class="info-icon">
+                        <i data-lucide="refresh-ccw"></i>
+                    </div>
+                    <h3 data-i18n="info_renovacion_title">Renovación</h3>
+                    <ul class="info-list">
+                        <li>Residencias temporales se otorgan por <strong>2 años</strong></li>
+                        <li>Renovables si se mantiene la inversión</li>
+                        <li>Tras <strong>3 años consecutivos</strong>, puede solicitarse la residencia permanente</li>
+                    </ul>
+                </div>
+
+                <div class="info-card-modern">
+                    <div class="info-icon">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <h3 data-i18n="info_permanente_title">Residencia Permanente</h3>
+                    <p data-i18n="info_permanente_intro">Se obtiene principalmente por:</p>
+                    <ul class="info-list">
+                        <li>Vínculo familiar con costarricense</li>
+                        <li>Residencia temporal durante 3 años</li>
+                        <li>Cónyuge de costarricense</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contacto" class="contact-section-modern">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info-side">
+                    <span class="section-badge" data-i18n="contact_label">Comencemos</span>
+                    <h2 class="section-title-modern" data-i18n="contact_title">¿Listo para iniciar tu trámite migratorio?</h2>
+                    <p>Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <div>
+                                <strong>Teléfono / WhatsApp</strong>
+                                <p>+506 XXXX-XXXX</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>info@residenciacr.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <p>San José, Costa Rica</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="clock"></i>
+                            <div>
+                                <strong>Horario</strong>
+                                <p>Lun-Vie 8:00-17:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-side">
+                    <form class="contact-form-modern" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre" data-i18n="contact_name">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nacionalidad" data-i18n="contact_nationality">Nacionalidad</label>
+                                <input type="text" id="nacionalidad" name="nacionalidad" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" data-i18n="contact_email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono" data-i18n="contact_phone">Teléfono (WhatsApp)</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tipo-residencia" data-i18n="contact_type">Tipo de residencia de interés</label>
+                            <select id="tipo-residencia" name="tipo-residencia" required>
+                                <option value="" data-i18n="contact_type_select">Selecciona una opción</option>
+                                <option value="rentista" data-i18n="contact_type_rentista">Rentista</option>
+                                <option value="pensionado" data-i18n="contact_type_pensionado">Pensionado</option>
+                                <option value="inversionista" data-i18n="contact_type_inversionista">Inversionista</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje" data-i18n="contact_message">Mensaje adicional</label>
+                            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary-large full-width">
+                            <i data-lucide="message-circle"></i>
+                            <span data-i18n="contact_submit">Enviar por WhatsApp</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="footer-grid-modern">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <i data-lucide="shield-check" class="footer-brand-icon"></i>
+                        <h4>Legal Unity</h4>
+                    </div>
+                    <p>Firma especializada en derecho migratorio en Costa Rica. Acompañamiento profesional en tu proceso de residencia.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Residencias</h4>
+                    <ul class="footer-links">
+                        <li><a href="#rentista" data-i18n="nav_rentista">Rentista</a></li>
+                        <li><a href="#pensionado" data-i18n="nav_pensionado">Pensionado</a></li>
+                        <li><a href="#inversionista" data-i18n="nav_inversionista">Inversionista</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="#sobre-nosotros" data-i18n="nav_about">Sobre nosotros</a></li>
+                        <li><a href="#servicios" data-i18n="nav_services">Servicios</a></li>
+                        <li><a href="#informacion" data-i18n="nav_info">Información</a></li>
+                        <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer_contact_title">Contacto</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i data-lucide="phone"></i>
+                            <span>+506 8912-5481</span>
+                        </li>
+                        <li>
+                            <i data-lucide="mail"></i>
+                            <span>info@residenciacr.com</span>
+                        </li>
+                        <li>
+                            <i data-lucide="map-pin"></i>
+                            <span>San José, Costa Rica</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer_rights">&copy; 2024 Legal Unity. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="modals.js"></script>
+    <script src="script.js"></script>
+    <script src="i18n-content.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
