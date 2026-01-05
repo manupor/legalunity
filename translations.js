@@ -140,8 +140,8 @@ const translations = {
         
         // Footer
         footer_contact_title: "Contact",
-        footer_phone: "Phone / WhatsApp: +506 XXXX-XXXX",
-        footer_email: "Email: info@residenciacr.com",
+        footer_phone: "Phone / WhatsApp: +506 8912-5481",
+        footer_email: "Email: contacto@legalunitycr.com",
         footer_address: "Address: San José, Costa Rica",
         footer_hours: "Hours: Mon-Fri 8:00-17:00",
         footer_links_title: "Quick Links",
@@ -291,7 +291,7 @@ const translations = {
         // Footer
         footer_contact_title: "Contacto",
         footer_phone: "Teléfono / WhatsApp: +506 XXXX-XXXX",
-        footer_email: "Email: info@residenciacr.com",
+        footer_email: "Email: contacto@legalunitycr.com",
         footer_address: "Dirección: San José, Costa Rica",
         footer_hours: "Horario: Lun-Vie 8:00-17:00",
         footer_links_title: "Enlaces Rápidos",
@@ -299,5 +299,133 @@ const translations = {
         footer_contact: "Contáctenos",
         footer_description: "Firma especializada en derecho migratorio en Costa Rica. Acompañamiento profesional en tu proceso de residencia temporal o permanente.",
         footer_rights: "© 2024 Residencia Costa Rica. Todos los derechos reservados."
+    },
+    de: {
+        // Navigation
+        nav_home: "Startseite",
+        nav_about: "Über uns",
+        nav_residences: "Aufenthaltsarten",
+        nav_rentista: "Rentista",
+        nav_pensionado: "Rentner",
+        nav_inversionista: "Investor",
+        nav_services: "Dienstleistungen",
+        nav_info: "Informationen",
+        nav_contact: "Kontakt",
+        
+        // Hero Section
+        hero_brand: "Legal Unity",
+        hero_subtitle: "Costa Rica Aufenthalt",
+        hero_categories: "Rentista · Rentner · Investor",
+        hero_description: "Wir begleiten Sie durch den gesamten Einwanderungsprozess, um Ihren vorübergehenden Aufenthalt in Costa Rica sicher, schnell und komplikationslos zu erhalten.",
+        hero_btn_rentista: "Rentista",
+        hero_btn_pensionado: "Rentner",
+        hero_btn_inversionista: "Investor",
+        hero_btn_consultation: "Beratung vereinbaren",
+        
+        // About Section
+        about_label: "Lernen Sie Legal Unity kennen",
+        about_title: "Wer wir sind?",
+        about_intro: "Wir sind eine auf Einwanderungsrecht in Costa Rica spezialisierte Kanzlei, die Ausländer bei ihrem Prozess zur Erlangung eines vorübergehenden oder dauerhaften Aufenthalts begleitet.",
+        about_details: "Wir verwalten Dokumente, reichen Ihre Unterlagen bei der Einwanderungsbehörde ein, bieten ständige Nachverfolgung und führen alle notwendigen Schritte durch, damit Sie Ihren legalen Status ohne Stress oder unnötige Verfahren erhalten können.",
+        about_highlight: "Unser Engagement ist es, Ihnen einen effizienten, ehrlichen und persönlichen Service zu bieten.",
+        
+        // Residences Section
+        residences_label: "Finden Sie Ihre Option",
+        residences_title: "Aufenthaltsarten",
+        
+        // Rentista
+        rentista_title: "Rentista Aufenthalt",
+        rentista_description: "Ideal für Ausländer, die in Costa Rica leben möchten, indem sie ein stabiles Einkommen nachweisen, ohne im Land arbeiten zu müssen.",
+        rentista_requirements_general: "Allgemeine Anforderungen",
+        rentista_requirements_specific: "Spezifische Anforderung - Rentista",
+        rentista_requirement_income: "Nachweis über ein Einkommen von 2.500 USD pro Monat für 2 Jahre, entweder durch Bankeneinzahlung oder Finanzbescheinigung",
+        rentista_services: "Unsere Dienstleistungen",
+        rentista_cta: "Bewertung für Rentista anfordern",
+        
+        // General Requirements (same for all)
+        req_form: "Antragsformular, das vor einem Beamten unterschrieben oder von einem Anwalt beglaubigt wurde",
+        req_payment: "Zahlung der Einwanderungsgebühren: 50 USD",
+        req_photos: "Zwei Passfotos",
+        req_passport: "Vollständige Kopie des Reisepasses",
+        req_birth: "Geburtsurkunde + spanische Übersetzung (legalisiert/apostilliert)",
+        req_police: "Polizeiliches Führungszeugnis + spanische Übersetzung (legalisiert/apostilliert)",
+        req_marriage: "Heiratsurkunde + spanische Übersetzung (falls verheiratet, legalisiert/apostilliert)",
+        req_fingerprint: "Fingerabdrücke bei der Einwanderungsbehörde",
+        req_registration: "Registrierung bei der Einwanderungsbehörde",
+        
+        // Pensionado
+        pensionado_title: "Rentner Aufenthalt",
+        pensionado_description: "Richtet sich an Rentner oder Personen, die eine lebenslange bescheinigte Rente erhalten.",
+        pensionado_requirements_general: "Allgemeine Anforderungen",
+        pensionado_requirements_specific: "Spezifische Anforderung - Rentner",
+        pensionado_requirement_pension: "Nachweis über eine lebenslange Rente von mindestens 1.000 USD pro Monat",
+        pensionado_services: "Unsere Dienstleistungen",
+        pensionado_cta: "Bewertung für Rentner anfordern",
+        
+        // Inversionista
+        inversionista_title: "Investor Aufenthalt",
+        inversionista_description: "Für Ausländer, die Investitionen in Costa Rica getätigt haben.",
+        inversionista_requirements_general: "Allgemeine Anforderungen",
+        inversionista_requirements_specific: "Spezifische Anforderung - Investor",
+        inversionista_requirement_investment: "Nachweis über Investition von mindestens 150.000 USD in Costa Rica",
+        inversionista_services: "Unsere Dienstleistungen",
+        inversionista_cta: "Bewertung für Investor anfordern",
+        
+        // Services Section
+        services_label: "Was wir bieten",
+        services_title: "Unsere Dienstleistungen",
+        services_description: "Umfassende rechtliche Unterstützung für Ihren Einwanderungsprozess",
+        service_tramites: "Vollständige Verfahren",
+        service_tramites_desc: "Einwanderung, CCSS und Banken",
+        service_renovaciones: "Verlängerungen",
+        service_renovaciones_desc: "Von Aufenthalt und DIMEX",
+        service_aeropuerto: "Flughafenunterstützung",
+        service_aeropuerto_desc: "Unterstützung bei Einwanderungssituationen",
+        service_adicionales: "Zusätzliche Dienstleistungen",
+        service_adicionales_desc: "Minderjährige, Lizenzen und Gemeinden",
+        services_cta: "Vereinbaren Sie eine Beratung mit einem Spezialisten",
+        
+        // Information Section
+        info_label: "Wichtige Details",
+        info_title: "Wichtige Informationen",
+        info_apostilla_title: "Apostille",
+        info_apostilla_1: "Alle ausländischen Dokumente müssen apostilliert sein.",
+        info_apostilla_2: "Die Kanzlei vereinbart den Termin und das Verfahren, ohne dass der Kunde erscheinen muss.",
+        info_renovacion_title: "Verlängerung",
+        info_renovacion_1: "Vorübergehende Aufenthalte (wie Investor) werden für 2 Jahre gewährt",
+        info_renovacion_2: "Verlängerbar, wenn die Investition beibehalten wird",
+        info_renovacion_3: "Nach 3 aufeinanderfolgenden Jahren kann der dauerhafte Aufenthalt beantragt werden",
+        info_permanente_title: "Dauerhafter Aufenthalt",
+        info_permanente_intro: "Wird hauptsächlich erhalten durch:",
+        info_permanente_1: "Familiäre Bindung zu einem Costa Ricaner (Eltern, Kinder, behinderte Geschwister)",
+        info_permanente_2: "3 aufeinanderfolgende Jahre mit vorübergehendem Aufenthalt",
+        info_permanente_3: "Ehepartner eines Costa Ricaners (nach 3 Jahren verlängertem vorübergehendem Aufenthalt)",
+        
+        // Contact Section
+        contact_label: "Lassen Sie uns beginnen",
+        contact_title: "Bereit, Ihren Einwanderungsprozess in Costa Rica zu starten?",
+        contact_name: "Vollständiger Name",
+        contact_nationality: "Staatsangehörigkeit",
+        contact_email: "E-Mail-Adresse",
+        contact_phone: "Telefon (WhatsApp)",
+        contact_type: "Aufenthaltsart von Interesse",
+        contact_type_select: "Wählen Sie eine Option",
+        contact_type_rentista: "Rentista",
+        contact_type_pensionado: "Rentner",
+        contact_type_inversionista: "Investor",
+        contact_message: "Zusätzliche Nachricht",
+        contact_submit: "Über WhatsApp senden",
+        
+        // Footer
+        footer_contact_title: "Kontakt",
+        footer_phone: "Telefon / WhatsApp: +506 XXXX-XXXX",
+        footer_email: "E-Mail: contacto@legalunitycr.com",
+        footer_address: "Adresse: San José, Costa Rica",
+        footer_hours: "Öffnungszeiten: Mo-Fr 8:00-17:00",
+        footer_links_title: "Schnelllinks",
+        footer_about: "Über uns",
+        footer_contact: "Kontaktieren Sie uns",
+        footer_description: "Auf Einwanderungsrecht in Costa Rica spezialisierte Kanzlei. Professionelle Begleitung bei Ihrem Prozess des vorübergehenden oder dauerhaften Aufenthalts.",
+        footer_rights: "© 2024 Residencia Costa Rica. Alle Rechte vorbehalten."
     }
 };
