@@ -20,15 +20,8 @@ const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 
 navToggle.addEventListener('click', function() {
+    this.classList.toggle('active');
     navMenu.classList.toggle('active');
-    
-    // Animate hamburger
-    const hamburger = this.querySelector('.hamburger');
-    if (navMenu.classList.contains('active')) {
-        hamburger.style.background = 'transparent';
-    } else {
-        hamburger.style.background = 'var(--color-text)';
-    }
 });
 
 // Mobile Dropdown Toggle
@@ -46,8 +39,8 @@ document.querySelectorAll('.nav-dropdown > .nav-link').forEach(link => {
 document.querySelectorAll('.nav-link:not(.nav-dropdown > .nav-link), .dropdown-link').forEach(link => {
     link.addEventListener('click', function() {
         if (window.innerWidth <= 768) {
+            navToggle.classList.remove('active');
             navMenu.classList.remove('active');
-            document.querySelector('.hamburger').style.background = 'var(--color-text)';
         }
     });
 });
