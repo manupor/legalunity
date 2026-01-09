@@ -184,9 +184,14 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     window.open(whatsappURL, '_blank');
     
     // Show success message
-    const successMessage = lang === 'es' 
-        ? '¡Redirigiendo a WhatsApp! El mensaje se abrirá automáticamente.' 
-        : 'Redirecting to WhatsApp! The message will open automatically.';
+    let successMessage;
+    if (lang === 'es') {
+        successMessage = '¡Redirigiendo a WhatsApp! El mensaje se abrirá automáticamente.';
+    } else if (lang === 'de') {
+        successMessage = 'Weiterleitung zu WhatsApp! Die Nachricht wird automatisch geöffnet.';
+    } else {
+        successMessage = 'Redirecting to WhatsApp! The message will open automatically.';
+    }
     
     alert(successMessage);
     
